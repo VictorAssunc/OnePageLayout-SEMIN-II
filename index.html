@@ -5,57 +5,70 @@
     <title>SITE DE ALGUMA COISA QUE NÃO SEI AINDA</title>
 
     <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   </head>
   <body>
     <header class="menu">
       <nav>
         <ul>
-          <li><a href="#page1">page1</a></li>
-          <li><a href="#page2">page2</a></li>
-          <li><a href="#page3">page3</a></li>
-          <li><a href="#page4">page4</a></li>
-          <li><a href="#page5">page5</a></li>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">SOBRE</a></li>
+          <li><a href="#portfolio">TRABALHOS</a></li>
+          <li><a href="#hi">OI</a></li>
+          <li><a href="#contact">CONTATO</a></li>
         </ul>
       </nav>
     </header>
 
-    <section id="page1" class="page1">
+    <section id="home" class="home">
       <img src="images/banner.png" alt="Banner Bonito e Proviśorio">
     </section>
 
-    <section id="page2" class="flexible">
-      <article class="borda_debug" data-animate="left">
-        Esquerda
+    <section id="about" class="grid-about">
+      <article class="borda_debug title-about" data-animate="left" >
+        <h1>Sobre a Artista</h1>
       </article>
-      <article class="borda_debug" data-animate="right">
-        Direita
+      <article class="borda_debug content1-about" data-animate="left" >
+        <h2>Quem é Larissa Silveira?</h2>
+        <p><br>Desde cedo, Larissa Silveira já se interessava por desenhos e
+        pinturas. Natural de Minas Gerais, não tinha condição financeira de
+        iniciar um curso para aprimorar esse amor. Foi aí que a mineirinha
+        desenvolveu uma paixão por um estilo de arte excepcional, um estilo que
+        hoje ela initula como arte tosca. Um estilo baseado em desenhos simples
+        sem a utilização de muitas técnicas e equipamentos sofisticados. Na
+        verdade, só tem a utilização do paint do Windows. De acordo com a
+        artista, o objetivo de seus trabalhos é mostar que para a arte acontecer
+        é necessário somente um sentimento e a coragem de expressá-lo, assim,
+        democratizando o acesso e a produção de arte.</p>
+      </article>
+      <article class="borda_debug content2-about" data-animate="right">
+        <img id="portrait" src="images/retrato.png" alt="Autorretrato de Larissa Silveira">
       </article>
     </section>
 
-    <section id="page3" class="flexible">
-      <article class="borda_debug" data-animate="left">
-        Esquerda
+    <section id="portfolio" class="grid-portfolio">
+      <article class="borda_debug title-portfolio" data-animate="left">
+        <h1>Trabalhos</h1>
       </article>
-      <article class="borda_debug" data-animate="center">
-        Centro
-      </article>
-      <article class="borda_debug" data-animate="right">
-        Direita
+      <article class="borda_debug content-portfolio" data-animate="center">
+        <img class="slide" src="images/arte1.png">
+        <img class="slide" src="images/arte2.png">
+        <img class="slide" src="images/arte3.png">
+        <img class="slide" src="images/arte4.png">
+        <img class="slide" src="images/arte5.png">
+        <img class="slide" src="images/arte6.png">
+        <img class="slide" src="images/arte7.png">
+
+        <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
       </article>
     </section>
 
-    <section id="page4" class="flexible parallax hi_parallax">
-      <!-- <article class="borda_debug" data-animate="left">
-        Esquerda
-      </article>
-      <article class="borda_debug" data-animate="right">
-        Direita
-      </article> -->
-    </section>
+    <section id="hi" class="grid hi_background" data-animate="center"></section>
 
-    <section id="page5" class="flexible">
+    <section id="contact" class="grid">
       <article class="borda_debug" data-animate="left">
-        Esquerda
+        <h1>Contato</h1>
       </article>
       <article class="borda_debug" data-animate="center">
         Centro
