@@ -11,6 +11,26 @@ html {
   scroll-behavior: smooth;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 header {
   padding: 15px 0px;
   position: fixed;
@@ -29,7 +49,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-  font-family: 'Caveat Brush', sans-serif !IMPORTANT;
+  font-family: 'Caveat Brush', sans-serif !important;
   text-decoration: none;
   text-transform: uppercase;
   color: grey;
@@ -75,35 +95,35 @@ footer p {
 }
 
 h1 {
-  font-family: 'Caveat Brush', sans-serif !IMPORTANT;
+  font-family: 'Caveat Brush', sans-serif !important;
   text-align: left;
 	text-transform: uppercase;
-  font-size: 2.75em;
+  font-size: 3.5em !important;
 	font-weight: bold;
   color: white;
 }
 
 h2 {
-  font-family: 'Caveat Brush', sans-serif !IMPORTANT;
+  font-family: 'Caveat Brush', sans-serif !important;
   text-align: left;
-	font-size: 1.5em;
+	font-size: 2.5em !important;
 	font-weight: bold;
   color: white;
 }
 
 p {
-  font-family: 'Caveat Brush', sans-serif !IMPORTANT;
+  font-family: 'Caveat Brush', sans-serif !important;
   text-align: justify;
-  font-size: 1.2em;
+  font-size: 2em;
   font-weight: normal;
-  line-height: 1.5em;
+  line-height: 1.5em !important;
   color: white;
 }
 
 .grid-about {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 5em 1fr;
+  grid-template-rows: 7em 1fr;
   gap: 1px 1px;
   grid-template-areas: "title-about title-about" "content1-about content2-about";
 }
@@ -116,6 +136,7 @@ p {
 .content1-about {
   grid-area: content1-about;
   text-align: left;
+  margin-right: 10px;
 }
 
 .content2-about {
@@ -126,7 +147,7 @@ p {
 .grid-portfolio {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 5em 1fr;
+  grid-template-rows: 7em 1fr;
   gap: 1px 1px;
   grid-template-areas: "title-portfolio" "content-portfolio";
 }
@@ -139,23 +160,47 @@ p {
 .content-portfolio {
   grid-area: content-portfolio;
   text-align: center;
-  width: 80vw;
+  align-items: center;
+  width: 100vw;
 }
 
 .slide {
   display: none;
+  position: relative;
+  width: 100%;
   max-height: 80vh;
+  text-align: center;
   align-items: center;
   overflow-y: hidden;
+}
+
+.my-hover-gray:hover {
+  color: rgba(255, 255, 255, 0.8) !important;
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.w3-left, .w3-right, .w3-badge {
+  cursor:pointer;
+}
+
+.w3-badge {
+  height:13px;
+  width:13px;
+  padding:0;
 }
 
 article {
   width: 50vw;
   margin-left: 10px;
+  margin-right: 10px;
 }
 
 footer {
   text-align: center;
+}
+
+#footer_text {
+  font-size: 1em;
 }
 
 #about {
@@ -171,6 +216,14 @@ footer {
   max-width: 50vw;
   max-height: 80vh;
   overflow-y: hidden;
+}
+
+.hi_background {
+  background-image: url('../images/oi.png');
+  background-attachment: local;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
 }
 
 /* ANIMATIONS */
@@ -194,15 +247,6 @@ footer {
 [data-animate].animation {
   opacity: 1;
   transform: translate3d(0, 0, 0);
-}
-
-.hi_background {
-  background-image: url('../images/oi.png');
-  background-attachment: local;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  height: 70vh;
 }
 
 /* DEBUG ONLY */
